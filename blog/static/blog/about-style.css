@@ -1,9 +1,30 @@
-.icon {
-    background-image: url("icon.gif");
-    width: 811px;
-    height: 352px;
+
+.layout {
+    background-image: url("about_pic/prog_girl.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+}
+.girl {
+    background-image: url("about_pic/girl.jpg");
+    height: 300px;
+    width: 300px; /* size */
+    background-size: cover; /* image not cut */
+    position: absolute; /* text on image */
+    left: 80%; /* left */
+}
+.dsgirl {
+    background-image: url("about_pic/discord_girl.jpg");
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    position: absolute;
+    left: 80%;
+    top: 300px;
 }
 
 h1, h2, h3, h4, ul, p {
     color: white;
+    position: relative;
 }
