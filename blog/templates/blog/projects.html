@@ -10,17 +10,73 @@
 
 <h1 align="center">Welcome, it's my projects</h1>
 
-<nav align="center">
-<a href="{% url 'about' %}">about</a>
-<a href="{% url 'projects' %}">projects</a>
-</nav>
+<!--!!!!!-->
 
-<h3 align="center">You can find me in:</h3>
+<h3 align="center">You can find me on:</h3>
 <div class="social-urls">
 <a href="https://github.com/hellcard">GitHub</a>
 <a href="https://t.me/hellcard_developer">Telegram</a>
 </div>
 <div class="github"></div>
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<h2 align="center">My projects</h2>
+
+<h2 align="center">My projects:</h2>
+<h4 align="center">Sort by categories</h4>
+
+<div class="cats">
+{% for c in categories %}
+<a href="{% url 'projects_ids' c.pk %}">{{ c.name }}</a>
+{% endfor %}
+</div>
+
+<div class="container">
+{% block ids %}
+<div>
+{% for p in projs_1 %}
+    <h3>{{p.title}}</h3>
+    <h4>{{p.description}}</h4>
+    <h4>Category: {{p.category}}</h4>
+    <a href="{{p.url}}">{{ p.url }}</a>
+    <br>
+    <br>
+{% endfor %}
+</div>
+
+<div>
+{% for p in projs_2 %}
+    <h3>{{p.title}}</h3>
+    <h4>{{p.description}}</h4>
+    <h4>Category: {{p.category}}</h4>
+    <a href="{{p.url}}">{{ p.url }}</a>
+    <br>
+    <br>
+{% endfor%}
+</div>
+
+<div>
+{% for p in projs_3 %}
+    <h3>{{p.title}}</h3>
+    <h4>{{p.description}}</h4>
+    <h4>Category: {{p.category}}</h4>
+    <a href="{{p.url}}">{{ p.url }}</a>
+    <br>
+    <br>
+{%endfor %}
+</div>
+
+<div>
+{% for p in projs_4 %}
+    <h3>{{p.title}}</h3>
+    <h4>{{p.description}}</h4>
+    <h4>Category: {{p.category}}</h4>
+    <a href="{{p.url}}">{{ p.url }}</a>
+    <br>
+    <br>
+{% endfor %}
+</div>
+
+</div>
+<div class="banner"></div>
+{% endblock %}
+
 {% endblock %}

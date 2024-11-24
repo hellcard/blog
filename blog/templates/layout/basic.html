@@ -7,6 +7,13 @@
 </head>
 <body bgcolor="#0E0E10"> 
 
+{% block pages %}
+<nav align="center">
+    <a href="{% url 'about' %}">about</a> <br>
+    <a href="{% url 'projects' %}">projects</a> <br>
+    <a href="{% url 'main_page' %}">main page</a> <br>
+</nav>
+{% endblock %}
 
 {% block content %}
 {% endblock %}

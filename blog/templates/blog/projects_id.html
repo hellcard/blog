@@ -1,0 +1,16 @@
+{% extends "blog/projects.html" %}
+{% block title %} {{ current_category }} {% endblock %}
+
+{% block ids %}
+<div>
+{% for p in projects %}
+<h3>{{p.title}}</h3>
+<h4>{{p.description}}</h4>
+<h4>Category: {{p.category}}</h4>
+<a href="{{p.url}}">{{ p.url }}</a>
+<br><br>
+{% endfor %}
+</div>
+<div class="banner-2"></div>
+<div class="banner-3"></div>
+{% endblock %}

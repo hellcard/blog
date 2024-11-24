@@ -1,12 +1,3 @@
-
-.layout {
-    background-image: url("about_pictures/layout.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    position: absolute;
-}
-
 .black-icon {
     background-image: url("about_pictures/black-icon.jpg");
     height: 400px;
@@ -22,7 +13,8 @@
     width: 300px;
     background-size: cover;
     position: absolute;
-    left: 40%;
+    top: 60%;
+    left: 25%;
 }
 
 .black-icon-2 {
