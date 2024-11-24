@@ -1,0 +1,30 @@
+.layout {
+    background-image: url("projects_pictures/layout.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+}
+h1, h2, h3, h4, ul {
+    color: white;
+    position: relative;
+}
+nav a {
+    color: white;
+    position: relative;
+    left: 45%;
+}
+.social-urls a {
+    color: white;
+    position: relative;
+    left: 45%;
+}
+.github {
+    background-image: url("projects_pictures/hellcard-github.png");
+    height: 300px;
+    width: 800px;
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}

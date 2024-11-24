@@ -22,7 +22,7 @@
     width: 300px;
     background-size: cover;
     position: absolute;
-    top: 65%;
+    left: 40%;
 }
 
 .black-icon-2 {
@@ -34,8 +34,7 @@
     left: 80%;
     top: 400px;
 }
-
-h1, h2, h3, h4, ul, p  {
+h1, h2, h3, h4, ul, p, nav a  {
     color: white;
     position: relative;
 }

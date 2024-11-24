@@ -1,0 +1,26 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+
+{% block title %} projects {% endblock %}
+{% block style %}<link rel="stylesheet" type="text/css" href="{% static 'blog/projects/projects-style.css' %}">{% endblock %}
+
+{% block content %}
+
+<div class="layout"></div>
+
+<h1 align="center">Welcome, it's my projects</h1>
+
+<nav align="center">
+<a href="{% url 'about' %}">about</a>
+<a href="{% url 'projects' %}">projects</a>
+</nav>
+
+<h3 align="center">You can find me in:</h3>
+<div class="social-urls">
+<a href="https://github.com/hellcard">GitHub</a>
+<a href="https://t.me/hellcard_developer">Telegram</a>
+</div>
+<div class="github"></div>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<h2 align="center">My projects</h2>
+{% endblock %}
